@@ -481,6 +481,16 @@ dss.parser( 'markup', function () {
   }];
 });
 
+// Adding parser — @type
+dss.parser( 'type', function () {
+  return this.line.contents;
+});
+
+// Adding parser — @section
+dss.parser( 'section', function () {
+  return this.line.contents;
+});
+
 // Module exports
 if( typeof exports !== 'undefined' ) {
   if ( typeof module !== 'undefined' && module.exports ) {
